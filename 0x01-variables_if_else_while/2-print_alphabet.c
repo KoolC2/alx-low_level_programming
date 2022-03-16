@@ -8,11 +8,12 @@
  */
 int main(void)
 {
-	char lwca;
+	char low;
 
-	for (lwca = 'a'; lwca <= 'z'; lwca++);
+	for (low = 'a'; low <= 'z'; low++);
         {
-		putchar(lwca);
-	}
+		putchar(low);
+	        }
+	        pintf("\n");
 	return (0);
 }
