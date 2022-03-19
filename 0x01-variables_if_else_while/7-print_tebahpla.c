@@ -8,17 +8,14 @@
  */
 int main(void)
 {
-	int n;
+	char low;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
 
-	if (n > 0)
-		printf("%d is positive\n", n);
-	else if (n==0)
-		printf("%d is zero\n", n);
-	else
-		printf("%d is negative\n", n);
+	for (low = 'z'; low >= 'a'; low--)
+	{
+		puchar(low);
+	}
+		printf('\n');
 
 	return (0);
 }
