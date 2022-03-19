@@ -8,17 +8,18 @@
  */
 int main(void)
 {
-	int n;
+	char low, e, q;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
+	e = 'e';
+	q = 'q';
 
-	if (n > 0)
-		printf("%d is positive\n", n);
-	else if (n==0)
-		printf("%d is zero\n", n);
-	else
-		printf("%d is negative\n", n);
+	for (low = 'a'; low <= 'z'; low++)
+	{
+
+	if (low != e && low != q)
+		putchar(low);
+	}
+	printf("\n");
 
 	return (0);
 }
