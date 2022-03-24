@@ -16,7 +16,7 @@ char *_strcat(char *dest, char *src)
 	peg = 0;
 	while (dest[peg] != '\0')
 {
-	++len;
+	++peg;
 }
 for (i = 0; src[i] != '\0'; ++i, ++peg)
 {
