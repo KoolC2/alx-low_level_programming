@@ -2,28 +2,27 @@
 
 /**
 * _strcat - concatenates two string
-* @dest: first input string
-* @src: second input string
+* @dest: destination
+* @src: source
+* @n: no. of bytes
 *
-* Description: appends the src string to the dest string
-* Return: dest
+* Return:pointer to dest
 */
 
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
-	int i, peg;
+	int i, length, g;
 
-	peg = 0;
-	while (dest[peg] != '\0')
+	for (i = 0; dest[i] != '\0'; i++)
 {
-	++len;
+	length++;
 }
-for (i = 0; src[i] != '\0'; ++i, ++peg)
+for (g = 0; src[g] != '\0' && g < n; g++)
 {
-	dest[peg] = src[i];
+	dest[i + g] = src[g];
 
 }
-dest[peg] = '\0';
+dest[i + g] = '\0';
 
 return (dest);
 }
