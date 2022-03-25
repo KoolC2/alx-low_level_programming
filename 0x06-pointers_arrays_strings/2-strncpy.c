@@ -1,29 +1,29 @@
 #include <stdio.h>
 
 /**
-* _strcat - concatenates two string
-* @dest: first input string
-* @src: second input string
-*
-* Description: appends the src string to the dest string
+* _strncpy - copies a string
+* @dest: first input character
+* @src: seconnd input charater
+* @n: numbers of bytes
+* Description: function copies a string
 * Return: dest
 */
+char *_strncpy(char *dest, char *src, int n)
 
-char *_strcat(char *dest, char *src)
 {
-	int i, peg;
+	int i;
 
-	peg = 0;
-	while (dest[peg] != '\0')
+	i = 0;
+	for (; i < n && src[i] != '\0'; ++i)
 {
-	++len;
+	dest[i] = src[i];
 }
-for (i = 0; src[i] != '\0'; ++i, ++peg)
+while (i < n)
 {
-	dest[peg] = src[i];
+	dest[i] = '\0';
+	++i;
 
 }
-dest[peg] = '\0';
 
 return (dest);
 }
