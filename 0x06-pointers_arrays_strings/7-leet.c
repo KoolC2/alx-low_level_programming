@@ -1,33 +1,27 @@
 #include <stdio.h>
-
 /**
-* _strcat - concatenates two string
-* @dest: first input string
-* @src: second input string
-*
-* Description: appends the src string to the dest string
-* Return: dest
-*/
+ * leet - ecode string
+ *  @str: input string 
+ *  Description: encodes a string into 1337
+ *   Return: always (0)
+ */
 
-char *_strcat(char *dest, char *src)
+ char *leet(char *str)
 {
-	int i, peg;
-
-	peg = 0;
-	while (dest[peg] != '\0')
-{
-	++len;
-}
-for (i = 0; src[i] != '\0'; ++i, ++peg)
-{
-	dest[peg] = src[i];
-
-}
-dest[peg] = '\0';
-
-return (dest);
-}
-
-
+	int i = 0, k;
+	char s[] = "aAeEoOtTlL";
+	char s1[] = "4433007711";
+	
+	for (; str[i] != '\0'; i++)
+	{
+		for (k = 0; k <= 9; k++)
+		{														if (s[k] == str[i])
+			{
+				str[i] = s1{k];
+				}
+			}
+															}
+		return (str);
+																												return (str																	}
 
 
