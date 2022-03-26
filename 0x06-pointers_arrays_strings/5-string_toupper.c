@@ -1,31 +1,25 @@
 #include <stdio.h>
 
 /**
-* _strcat - concatenates two string
-* @dest: first input string
-* @src: second input string
-*
-* Description: appends the src string to the dest string
-* Return: dest
+* string_toupper - changes sring to uppercase
+* @u: input string
+* Description: changes all lowercase letters of a string
+* Return: alawys (0)
 */
 
-char *_strcat(char *dest, char *src)
+char *string_toupper(char *u)
 {
-	int i, peg;
+	int i;
 
-	peg = 0;
-	while (dest[peg] != '\0')
-{
-	++len;
+	for (i = 0; u[i] != '\0'; ++i)
+	{
+		if (u[i] >= 'a' && u[i] <= 'z')
+		{
+			u[i] = u[i] - 32;
+	}
 }
-for (i = 0; src[i] != '\0'; ++i, ++peg)
-{
-	dest[peg] = src[i];
 
-}
-dest[peg] = '\0';
-
-return (dest);
+return (u);
 }
 
 
