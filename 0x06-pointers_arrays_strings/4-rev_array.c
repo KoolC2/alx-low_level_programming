@@ -1,31 +1,31 @@
 #include <stdio.h>
 
 /**
-* _strcat - concatenates two string
-* @dest: first input string
-* @src: second input string
+ * reverse_array - reverses content of an array
+* @a: first input string
+* @n: number of element
 *
-* Description: appends the src string to the dest string
-* Return: dest
+* Description: he funcion reverse the cponent of an array integers
+* Return: (0)
 */
 
-char *_strcat(char *dest, char *src)
+void reverse_array(int *a, int n)
 {
-	int i, peg;
+	int left, right, tmp;
 
-	peg = 0;
-	while (dest[peg] != '\0')
-{
-	++len;
+	left = 0;
+	right = n - 1;
+
+	while (left < right)
+	{
+		tmp = a[left];
+		a[left] = a[right];
+			a[right] = tmp;
+		left++;
+		right--;
 }
-for (i = 0; src[i] != '\0'; ++i, ++peg)
-{
-	dest[peg] = src[i];
 
-}
-dest[peg] = '\0';
 
-return (dest);
 }
 
 
