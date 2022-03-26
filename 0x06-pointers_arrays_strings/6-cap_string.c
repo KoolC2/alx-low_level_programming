@@ -1,31 +1,37 @@
 #include <stdio.h>
 
 /**
-* _strcat - concatenates two string
-* @dest: first input string
-* @src: second input string
-*
-* Description: appends the src string to the dest string
-* Return: dest
+* cap_string - capialize string
+* @s: first input string
+* Description: The funcion capializes strings
+* Return: always (0)
 */
 
-char *_strcat(char *dest, char *src)
-{
-	int i, peg;
+char *cap_string(char *s)
 
-	peg = 0;
-	while (dest[peg] != '\0')
 {
-	++len;
+	int i;
+
+	i = 0;
+	while (s[i] != '\0')
+{
+	if (s[0] >= 'a' && s[0] <= 'z')
+	{
+		s[0] = s[0] - 32;
+	}
+	if (s[i] == ' ' || s[i] == '.' || s[i] == '\t' || s[i] == '\n' || s[i] == ','
+			|| s[i] == ';' || s[i] == '!' || s[i] == '?' || s[i] == '('
+			|| s[i] == ')' || s[i] == '{' || s[i] == '}')
+	{
+		if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
+		{
+			s[i + 1] = s[i + 1] - 32;
+		}
+	}
+	i++;
+
 }
-for (i = 0; src[i] != '\0'; ++i, ++peg)
-{
-	dest[peg] = src[i];
-
-}
-dest[peg] = '\0';
-
-return (dest);
+return (s);
 }
 
 
