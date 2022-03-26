@@ -1,31 +1,35 @@
 #include <stdio.h>
 
 /**
-* _strcat - concatenates two string
-* @dest: first input string
-* @src: second input string
+* _strcmp - compares two string
+* @s1: first char input
+* @s2: second char input
 *
-* Description: appends the src string to the dest string
-* Return: dest
+* Description: function compares two string
+* Return: character count
 */
+int _strcmp(char *s1, char *s2)
 
-char *_strcat(char *dest, char *src)
 {
-	int i, peg;
+	int i, diff;
 
-	peg = 0;
-	while (dest[peg] != '\0')
+	for (i = 0; s1[i] != '\0'; ++i)
 {
-	++len;
-}
-for (i = 0; src[i] != '\0'; ++i, ++peg)
-{
-	dest[peg] = src[i];
+	if (s1[i] > s2[i])
+	{
+		diff = s1[i] - s2[i];
+		return (diff);
+	}
 
-}
-dest[peg] = '\0';
+	else if
+		(s1[i] < s2[i])
+	{
+		diff = s1[i] < s2[i];
+		return (diff);
+			}
+			}
 
-return (dest);
+return (0);
 }
 
 
