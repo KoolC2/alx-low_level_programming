@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * leet - ecode string
- *  @str: input string 
+ * @str: input string 
  *  Description: encodes a string into 1337
  *   Return: always (0)
  */
@@ -17,11 +17,8 @@
 		for (k = 0; k <= 9; k++)
 		{														if (s[k] == str[i])
 			{
-				str[i] = s1{k];
+				str[i] = s1[k];
 				}
 			}
 															}
-		return (str);
-																												return (str																	}
-
-
+		return (str)
