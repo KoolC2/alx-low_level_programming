@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- *_memcpyt - copies memory area
+ *_memcpy - copies memory area
  *@dest: destination
  *@src: source
  *@n: number of bytese
