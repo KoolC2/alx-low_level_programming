@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- * main - 
- * Description - 
+ * print_alphabet_x10 - prints 10x alphabets
+ * Description - prints 10 times
  * Return: Always 0
  */
-void print_alphabet_x10(void);
+void print_alphabet_x10(void)
 {
 	int alphabet_count = 0;
 
@@ -20,6 +20,6 @@ void print_alphabet_x10(void);
 				ch++;
 			}
 			alphabet_count++;
-			_putchar('\n')
+			_putchar('\n');
 	}
 }
