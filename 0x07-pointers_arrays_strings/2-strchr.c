@@ -1,20 +1,27 @@
 #include <stdio.h>
 #include "main.h"
 /**
- *_memset - fills memory
+ * _strchr - fills memory
  *@s: input string
- *@a: input char
- *@b: input size
+ *@c: input char
  *
  * Description: fill memory with a constant byte
  * Return: returns pointer to memory areas
  */
 
-char *_memset(char *s, char b, unsigned int n)
+char *_strchr(char *s, char c)
 {
-
-
-
-
-return ();
+	while (*s)
+	{
+		if (c == *s)
+		{
+			return (s);
+		}
+		s++;
+	}
+	if (!c)
+	{
+		return (s);
+	}
+	return (NULL);
 }
