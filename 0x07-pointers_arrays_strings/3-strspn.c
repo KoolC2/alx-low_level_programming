@@ -1,20 +1,32 @@
 #include <stdio.h>
 #include "main.h"
 /**
- *_memset - fills memory
+ *_strspn - gets length
  *@s: input string
- *@a: input char
- *@b: input size
+ *@accept: accepted chars
  *
- * Description: fill memory with a constant byte
- * Return: returns pointer to memory areas
+ * Description: gets the length of a prefix substring
+ * Return: num of bytes in the initial seg of s
  */
 
-char *_memset(char *s, char b, unsigned int n)
+unsigned int _strspn(char *s, char *accept)
 {
+	unsigned int i, j;
+	
+	for (i = 0; s[i]; i++)
+	{
+		for (j = 0; accept[j]; j++)
+		{
+			if (s[i] == accept[j])
+			{
+				break;
+			}
+		}
+		if (!accept[j])
+				{
+				break;
+				}
 
-
-
-
-return ();
+				}
+				return (i);
 }
