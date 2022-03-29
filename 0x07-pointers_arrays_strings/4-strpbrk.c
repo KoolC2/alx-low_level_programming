@@ -1,20 +1,44 @@
 #include <stdio.h>
 #include "main.h"
 /**
- *_memset - fills memory
+ *_strpbrk - search a string
  *@s: input string
- *@a: input char
- *@b: input size
+ *@accept: accept string
  *
- * Description: fill memory with a constant byte
- * Return: returns pointer to memory areas
+ * Description: search string for any of a set of byte
+ * Return: returns pointer to the byte s
  */
 
-char *_memset(char *s, char b, unsigned int n)
+char *_strpbrk(char *s, char *accept)
 {
+	int i, j, len, present = 0;
 
-
-
-
-return ();
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		continue;
+	}
+	len = i;
+	for (i = 0; accept[i] != '\0'; i++)
+	{
+		for (j = 0; s[j] != '\0'; j++)
+		{
+			if (accept[i] == s[j])
+			{
+				if (j <= len)
+				{
+					len = j;
+					present = 1;
+				}
+			}
+		}
+	}
+	if (present == 1)
+	{
+		return (&s[len]);
+	}
+	else
+	{
+		return (NULL);
+	}
+return (0);
 }
