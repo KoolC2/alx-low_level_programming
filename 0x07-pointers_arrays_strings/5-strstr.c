@@ -1,20 +1,36 @@
 #include <stdio.h>
 #include "main.h"
 /**
- *_memset - fills memory
- *@s: input string
- *@a: input char
- *@b: input size
+ *_strstr - locates a substring
+ *@needle: input string
+ *@haystack: input needles
  *
- * Description: fill memory with a constant byte
- * Return: returns pointer to memory areas
+ * Description: locates a substring
+ * Return: returns a pointer the
+ * beginging of the located substring
  */
 
-char *_memset(char *s, char b, unsigned int n)
+char *_strstr(char *haystack, char *needle)
 {
+	char *first, *compare;
 
-
-
-
-return ();
+	while (*haystack)
+	{
+		first = haystack;
+		compare = needle;
+		while (*haystack && *compare && *haystack == *compare)
+		{
+			haystack++;
+			compare++;
+		}
+		if (!*compare)
+		{
+			return (first);
+		}
+		else
+		{
+			haystack = first + 1;
+		}
+	}
+return (NULL);
 }

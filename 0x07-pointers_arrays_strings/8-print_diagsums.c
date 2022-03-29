@@ -1,20 +1,34 @@
 #include <stdio.h>
 #include "main.h"
 /**
- *_memset - fills memory
- *@s: input string
- *@a: input char
- *@b: input size
+ *print_diagsums - print diagram sum
+ *@a: input string
+ *@size: input char
  *
- * Description: fill memory with a constant byte
- * Return: returns pointer to memory areas
+ * Description: print the sum of two diagonals
+ * Return: always 0
  */
 
-char *_memset(char *s, char b, unsigned int n)
+void print_diagsums(int *a, int size)
 {
+	int i, j, s1, s2;
 
+	s1 = 0;
+	s2 = 0;
+	for (i = 0; i < size; i++)
+	{
+		for (j = 0; j < size; j++)
+		{
+			if (i == j)
+			{
+				s1 += *((a + i * size) + j);
+			}
+			if ((i + j) == (size - 1))
+			{
+				s2 += *((a + i * size) + j);
+			}
+		}
+	}
 
-
-
-return ();
+printf("%i, %i\n", s1, s2);
 }
