@@ -32,4 +32,4 @@ int _sqrt(int n, int i)
 int _sqrt_recursion(int n)
 {
 	return (_sqrt(n, 1));
-}	}
+}
