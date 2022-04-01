@@ -26,7 +26,7 @@ int _sqrt(int n, int i)
  *
  * @n: number to find sqrt
  *
- * Return: sqrt, (-1) no natural sqrt 
+ * Return: sqrt, (-1) no natural sqrt
  */
 
 int _sqrt_recursion(int n)
