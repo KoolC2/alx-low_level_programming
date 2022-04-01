@@ -2,11 +2,18 @@
 #include "main.h"
 
 /**
- * _puts_recursion - the function prints string
- * @ s: inputs string
+ * is_prime_number - prints prime number
+ * @n: input integers
  *
- * Description: Prints a string folowed by a new line.
- * Return: Always (0)
+ * Description: Prints 1 if prime number, 0 if otherwise.
+ * Return: Always 1 0r 0
  */
 
-void _puts_recursion(char *s)
+int is_prime_number(int n)
+{
+	if (n == 2)
+		return (1);
+
+	return (_prime(2, n));
+}
+
