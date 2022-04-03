@@ -3,9 +3,11 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-int _putchar(char c)
+#include <unistd.h>
+
+int _putchar(char c);
+
 int main(int argc, char **argv);
-int checker(char *c)
 
 #endif
 
