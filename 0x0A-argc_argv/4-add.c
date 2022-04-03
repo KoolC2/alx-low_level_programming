@@ -1,43 +1,29 @@
-#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
 
 /**
- * main - adds two positive numbers
- * @argc: number of argument
- * @argv: array of pointers
- *
- * Return: Always 0
- */
-
+ * main - adds positive numbers.
+ * @argc: number of command line arguments.
+ * @argv: array that contains the program command line arguments.
+ * Return: 0 - success.
+*/
 int main(int argc, char *argv[])
-
-	int sum = 0, a, b;
-	
-	for (a = 1; a < argc; a++)
-
-	if (checker(argv[a]))
-		sum += atoi(argv[a]);
-	else
-		printf("Error\n");
-	return (1);
-
-	printf("%d\n", sum);
-	return (0);
-}
-
-/**
- * checker - check if it is a letter
- * @c: checker character
- *
- * Return: 0 if found in range 1 if not
- */
-
-int checker(char *c)
 {
-	while (*c)
+	int i, j, sum = 0;
+
+	for (i = 1; i < argc; i++)
 	{
-		if ((*c >= 65 && *c <= 90) || (*c >= 97 && *c <= 122))
-			return (0);
-		c++;
-	}
-	return (1);
-	{
+		for (j = 0; argv[i][j] != '\0'; j++)
+		{
+			if (!isdigit(argv[i][j]))
+			{
+				printf("Error\n");
+				return (1);
+			}
+		}
+		sum += atoi(argv[i]);
+}
+printf("%d\n", sum);
+return (0);
+}
