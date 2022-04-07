@@ -2,11 +2,10 @@
 #include <stdio.h>
 
 /*
- * _abs - computes value of integer
- *
+ * _abs - it computes value of integer
  * @n: number
- * Descriptin: Comoutes integer
- * Return: computes  value
+ * Description: computes integer
+ * Return: absolute value
  */
 
 int _abs(int n)
