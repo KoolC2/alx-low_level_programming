@@ -1,14 +1,14 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
- * main - 
- * Description - 
- * Return: Always 0
+ * add - adds two integers
+ *
+ * @x: first input
+ * @y: second input
+ *
+ * Return: the sum ot two integers
  */
-
-
-
-
-
-return (0);
+int add(int x, int y)
+{
+	return (x + y);
+}
