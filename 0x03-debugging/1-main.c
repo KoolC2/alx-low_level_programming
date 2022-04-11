@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * largest_number - causes an infinite loop
+ * main - causes an infinite loop
  * Return: 0
  */
 
-int largest_number(void)
+int main(void)
 {
 	int i;
 
