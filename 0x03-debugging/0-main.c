@@ -2,13 +2,13 @@
 #include <stdio.h>
 
 /**
- * positive_or_negative - tests function the prints if integer is + or -
+ * main - tests function the prints if integer is + or -
  * * Description: positive_or_negative
  * @i: integer
  * Return: 0
  */
 
-int positive_or_negative(void)
+int main(void)
 {
 	int i;
 
